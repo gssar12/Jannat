@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root {
+  --font-arabic: 'IBM Plex Sans Arabic', system-ui, -apple-system, sans-serif;
+  --font-cinzel: 'Cinzel', Georgia, serif;
+}
+
+body {
+  font-family: var(--font-arabic);
+  background-color: #040405;
+  color: #f3f4f6;
+  overflow-x: hidden;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.font-cinzel {
+  font-family: var(--font-cinzel);
+}
+
+.font-arabic {
+  font-family: var(--font-arabic);
+}
+
+/* Subtle cinematic vignette */
+.cinematic-vignette {
+  background: radial-gradient(circle at 50% 40%, rgba(26, 26, 32, 0.4) 0%, rgba(4, 4, 5, 0.95) 75%, rgba(0, 0, 0, 1) 100%);
+}
+
+/* Subtle playful shake animation */
+@keyframes playful-shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-6px) rotate(-1deg); }
+  40% { transform: translateX(6px) rotate(1deg); }
+  60% { transform: translateX(-4px) rotate(-0.5deg); }
+  80% { transform: translateX(4px) rotate(0.5deg); }
+}
+
+.animate-playful-shake {
+  animation: playful-shake 0.45s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+/* Subtle glow */
+@keyframes ambient-pulse {
+  0%, 100% { opacity: 0.15; transform: scale(1); }
+  50% { opacity: 0.28; transform: scale(1.04); }
+}
+
+.animate-ambient-glow {
+  animation: ambient-pulse 8s ease-in-out infinite;
+}
+

@@ -1,0 +1,8 @@
+{
+  "name": "JANNAT | جنات",
+  "description": "تجربة تفاعلية خاصة وسينمائية صممها جسار لجنات",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
